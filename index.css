@@ -33,21 +33,21 @@ text-align: center;
 background: hotpink;
 width: 100px;
 height: 100px;
-animation-name:skew ;
-animation-duration: 5s;
-animation-iteration-count: infinite;
-/* animation-delay: 2s; */
+animation:skew  5s infinite;
 text-align: center;
-animation-direction: alternate-reverse;
-
 }
+
 @keyframes skew {
-   
-   
-    100%{
-        transform: skew(45deg);
+
+    25%{
+        transform: skew(45deg); 
     }
-    
+   75%{ 
+       transform: skew(-45deg);
+    }
+    100%{
+        transform: skew(0deg); 
+    }
 }
 
 .skew1{
@@ -61,12 +61,17 @@ animation-duration: 3s;
 animation-iteration-count: infinite;
 animation-delay: 1s;
 text-align: center;
-animation-direction: alternate-reverse;
+
 }
 @keyframes skew1 {
   
-    100%{
+    
+    
+    50%{
         transform: skew(45deg);
+    }
+    100%{
+        transform: skew(0deg);
     }
     
 }
